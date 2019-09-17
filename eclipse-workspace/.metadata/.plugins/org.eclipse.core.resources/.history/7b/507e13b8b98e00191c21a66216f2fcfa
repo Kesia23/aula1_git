@@ -1,0 +1,21 @@
+package course;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Salário:");
+        double salario = sc.nextDouble();
+        if (salario >= 0 && salario <= 2000.00) {
+        	System.out.println("Isento");
+        }
+        else if (salario >= 2000.01 && salario <= 3000.00) {
+        	double imposto = salario - 2000.00;
+        	imposto = (imposto * 08.00)/100;
+        	System.out.println(imposto);
+        }
+	}
+
+}

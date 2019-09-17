@@ -1,0 +1,11 @@
+package course;
+
+public class Program2 {
+
+	public static void main(String[] args) {
+           String original = "abcde FHGIJ ABC abc DEFG   ";
+           String s01 = original.toLowerCase();
+           System.out.println(s01);
+	}
+
+}

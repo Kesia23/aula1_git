@@ -1,0 +1,37 @@
+package application;
+
+import java.util.Scanner;
+
+public class Matriz {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Insira numero de linhas");
+		int m = sc.nextInt();
+		sc.nextLine();
+		System.out.println("Insira numero de colunas");
+		int n = sc.nextInt();
+		int [][] mat=new int[m][n];
+		//sc.nextLine();
+		for(int i=0;i<mat.length;i++) {
+			for(int j=0;j<mat[i].length;j++) {
+			//	System.out.println("Insira o numero:");
+			//	int numero = sc.nextInt();
+				mat[i][j] = sc.nextInt();
+			}
+		}
+		for(int i=0;i<m;i++) {
+			for(int j=0;j<n;j++) {
+				System.out.print(mat[i][j]+" ");
+			}
+		}
+		System.out.println();
+		System.out.println("Insira X ");
+		int X=sc.nextInt();
+		//colocar a posicao
+		sc.close();
+
+		System.exit(0);
+	}
+
+}
